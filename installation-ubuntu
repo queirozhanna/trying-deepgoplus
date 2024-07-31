@@ -1,0 +1,21 @@
+#installing the data used by developers to train and evaluate the model
+~$ wget https://deepgo.cbrc.kaust.edu.sa/data/data-1.0.19.tar.gz 
+-$ tar -xf data-1.0-19.tar.gz
+#installing the data requires to run the predict.sh script
+~$ wget https://deepgo.cbrc.kaust.edu.sa/data/data.tar.gz
+~$ tar -xf data/data.tar.gz 
+#installing the CAFA3 challenge dataset
+~$ wget https://deepgo.cbrc.kaust.edu.sa/data/data-cafa.tar.gz
+~$ tar -xf data-cafa.tar.gz
+#dataset used to compare DeepGOPlus, GOLabeler and DeepText2GO
+~$ wget https://deepgo.cbrc.kaust.edu.sa/data/data-2019.tar.gz
+~$ tar -xf data-2019.tar.gz
+
+#python dependencies:
+~$ sudo apt install locate
+~$ pip3 install -r requirements.txt
+~$ locate requirements.txt
+
+#installing diamond
+~$ wget http://github.com/bbuchfink/diamond/releases/download/v2.1.9/diamond-linux64.tar.gz
+~$ tar xzf diamond-linux64.tar.gz
