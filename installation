@@ -1,0 +1,62 @@
+# Download the Miniconda executable
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Allow the execution of the installer:
+$ chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+# Execute the installer:
+$ ./Miniconda3-latest-Linux-x86_64.sh
+
+# Execute the Miniconda environment:
+$ ./miniconda3/bin/conda init
+
+# Close the terminal and open again. If the message "(base)" appears before your username, it means the previous steps have worked.
+
+# Create a conda environment with Python 3,7:
+$ conda create -n "env_python3.7" python=3.7 -c conda-forge
+
+# Activate the environment:
+$ conda activate env_python3.7
+
+# Clone DeepGOPlus's GitHub repository:
+$ git clone https://github.com/bio-ontology-research-group/deepgoplus.git
+
+# Enter the cloned GitHub folder:
+$ cd deepgoplus/
+
+# Install the dependencies:
+$ pip install -r requirements.txt
+# or
+$ conda install absl-py==0.6.1
+$ pip install astor==0.7.1
+$ pip Click==7.1.2            
+$ conda install Cython==0.29.14
+$ conda install gast==0.2.1
+$ conda install grpcio==1.17.1
+$ conda install h5py==2.9.0
+$ conda install Keras-Applications==1.0.6
+$ conda install Keras-Preprocessing==1.0.5
+$ conda install Markdown==3.0.1
+$ pip install matplotlib==3.3.2        
+$ conda install numpy==1.18.5           
+$ conda install pandas==1.1.2           
+$ pip install protobuf==3.6.1
+$ pip install python-dateutil==2.7.5
+$ pip install pytz==2018.7
+$ pip install requests==2.24.0         
+$ conda install scikit-learn==0.20.2
+$ conda install scipy==1.2.0
+$ conda install six==1.12.0
+$ pip install sklearn==0.0
+$ conda install tensorboard==1.12.2
+$ python3 -m pip install tensorflow-gpu==2.3.1    
+$ pip install termcolor==1.1.0
+$ pip install Werkzeug==0.14.1
+$ wget==3.2               
+$ word2vec==0.10.2
+
+# Install Diamond:
+$ conda install bioconda::Diamond
+
+# Install DeepGOPlus:
+$ pip install deepgoplus
