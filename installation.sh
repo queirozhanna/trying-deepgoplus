@@ -1,26 +1,26 @@
-# Baixar o execuável do Miniconda
+# Downloading the Miniconda executable
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
-# Permitir a execução do instalador
+# Allowing the installing of the executer 
 $ chmod +x Miniconda3-latest-Linux-x86_64.sh
 
-# Executar o instalar
+# Executing the installer
 $ ./Miniconda3-latest-Linux-x86_64.sh
 
-# Executar o ambiente do Miniconda
+# Executing the miniconda's environment
 $ ./miniconda3/bin/conda init
 
-# Fechar o terminal e abrir de novo. Se aparecer a mensagem "(base)" antes do seu username, significa que deu certo.
+# CLose the terminal and open again. If there's "(base)" before the username, it means that the previous processes have worked.
 
-# Criar um ambiente conda com Python 3.7
+# Creating a conda environment with Python 3.7 
 $ conda create -n "env_python3.7" python=3.7 -c conda-forge
 
-# Ativar o ambiente
+# Activating the environment 
 $ conda activate env_python3.7
 
-# Certificar se realmente o ambiente é de Python 3.7
+# Verifying if the created environment really is a Python 3.7 environment 
 $ sudo add-apt-repository ppa:deadsnakes/ppa
-  # Se não estiver em Python 3.7:
+  # If it's not Python 3.7 
     $ sudo add-apt-repository ppa:deadsnakes/ppa
     $ sudo apt update
     $ apt list --upgradable
@@ -28,13 +28,13 @@ $ sudo add-apt-repository ppa:deadsnakes/ppa
     $ sudo apt install python3.7-venv python3.7-dev python3-pip
     $ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
 
-# Clonar o repositório do DeepGOPlus
+# Cloning DeepGOPlus gitHub repository 
 $ git clone https://github.com/bio-ontology-research-group/deepgoplus.git
 
-# Abrir a pasta clonada
+# Opening the cloned folder
 $ cd deepgoplus/
 
-# Instalar as dependências
+# Installing the dependencies
   # absl-py==0.6.1
   # astor==0.7.1
   # Click==7.1.2            
@@ -63,8 +63,8 @@ $ cd deepgoplus/
   # wget==3.2               
   # word2vec==0.10.2
 
-# Instalar o Diamond:
+# Installing Diamond:
 $ conda install bioconda::Diamond
 
-# Install DeepGOPlus:
+# Installing DeepGOPlus:
 $ pip install deepgoplus
